@@ -258,6 +258,44 @@ MISURE PREVENZIONE
     margin-right: 1em;
 }
 
+/*
+SERVIZI
+*/
+
+
+.testo_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em;
+}
+
+.box_scritte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4em;
+}
+
+.container_servizi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.testo_flex strong{
+    margin: 1em 3em;
+}
+
+.container_servizi img{
+    padding: 2em;
+}
+
+
 
 
 
