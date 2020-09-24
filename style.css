@@ -208,7 +208,6 @@ CAROSELLO AUTO-SLIDER
 */
 
 .img-slider {
-    /* position: relative; FFRA */
     width: 100vw;
     height: 400px;
 }
@@ -621,6 +620,42 @@ input{
 }
 
 /* MEDIA QUERY */
+
+@media (max-width: 1400px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "slider"
+            "cosa_offriamo"
+            "covid"
+            "servizi"
+            "galleria"
+            "attivita"
+            "footer"
+        ;
+    }
+
+    .slider-container{
+        display: none;
+    }
+
+    .img-slider{
+        background-image: url(img/car1.jpg);
+        height: 800px;
+        width: 100%;
+    }
+
+    .cta{
+       margin-top: -13em;
+    }
+
+    .slider{
+        height: 800px;
+    }
+
+    
+}
 
   
 @media (max-width: 500px) {
