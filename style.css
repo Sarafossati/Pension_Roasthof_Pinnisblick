@@ -219,7 +219,6 @@ BURGER MENU
         width: 3000px;
         height: 100px;
         background-color: #fff;
-        z-index: 990;
     }
     100% {
         top: 0;
@@ -234,7 +233,6 @@ BURGER MENU
     0% {
         width: 3000px;
         height: 200px;
-        z-index: 990;
     }
 }
 
@@ -283,7 +281,6 @@ ul li:hover{
     top: 20px;
     left: 0;
     color: #02336E;
-    z-index: 999;
 }
 #menu-toggle:checked + #trigger + #burger {
     top: 35px;
@@ -308,8 +305,7 @@ ul li:hover{
     left: 18px;
     transform: rotate(-45deg) translateX(-5px);
     transition: transform .2s ease;
-    background-color: #02336E;
-    z-index: 999; 
+    background-color: #02336E; 
 }
 #menu {
     position: absolute;
