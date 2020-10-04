@@ -3,320 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pension Roasthof - Pinnisblick</title>
+    <meta name="author" content="Sara">
+    <meta name="keywords" content="Austria, Hotel, Pension, Holidays">
+    <title>Pension Roasthof - Pinnisblick </title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" sizes="15x15" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container-grid">
-        <header class="header">
-            <div class="bg_menu">
-                <input type="checkbox" id="menu-toggle"/>
-                  <label id="trigger" for="menu-toggle"></label>
-                  <label id="burger" for="menu-toggle"></label>
-                <ul id="menu">
-                        </li><a href="#">Home</a></li>
-                        <li><a href="#">Roasthof</a></li>
-                        <li><a href="#">Pinnisblick</a></li>
-                        <li><a href="#">Galleria</a></li>
-                        <li><a href="#">Tempo libero</a></li>
-                        <li><a href="#">Contatti</a></li>
-                        <li><a href="#">Richiedi info</a></li>
+<body class="container-grid">
+    <header>
+
+        <!-- BANNER -->
+        <div class="parallax">
+            <img class="logo" src="img/logo.png">
+            <div class="cta"> 
+                <h2>REGALATI UNA VACANZA INDIMENTICABILE</h2>
+            </div>
+            <div></div>
+            <section id="section01" class="demo">
+                <a href="#section02"><span></span>Scopri di più</a>
+            </section>
+        </div>
+        
+        <!-- MENU  -->
+        <div class="outer-menu">
+            <input class="checkbox-toggle" type="checkbox" />
+            <div class="hamburger">
+            <div></div>
+            </div>
+            <div class="nomepagina">
+            <p class="verticale">HOME</p>
+            </div>
+            <div class="menu">
+            <div>
+                <div class="container-flex-menu">
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="roasthof.html">ROASTHOF</a></li>
+                    <li><a href="pinnisblick.html">PINNISBLICK</a></li>
+                    <li><a href="galleria.html">GALLERIA</a></li>
+                    <li><a href="tempolibero.html">TEMPO LIBERO</a></li>
+                    <li><a href="contatti.html">CONTATTI</a></li>
+                    <li><a href="info.html">RICHIEDI INFO</a></li>
                 </ul>
-            </div> 
-            <nav class="container_menu">
-                <img class="logo" src="img/Logo_1.png">
-                <ul class="nav_menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><div class="dropdown">
-                        <span>Struttura</span>
-                        <div class="dropdown-content">
-                            <p>Roasthof</p>
-                            <br>
-                            <p>Pinnisblick</p>
-                            </div>
-                    </div></li>
-                    <li><a href="galleria.html">Galleria</a></li>
-                    <li><a href="tempo_libero.html">Tempo libero</a></li>
-                    <li><div class="dropdown">
-                        <span>Informazioni</span>
-                        <div class="dropdown-content">
-                            <p>Contatti</p>
-                            <br>
-                            <p>Richiedi info</p>
-                            </div>
-                    </div></li>
-                </ul>
+                <br>
                 <button class="button_azzurro">Verifica la disponibilità</button>
+                <BR></BR>
                 <div class="scelta_lingua">
                     <a href="index.html"><img src="img/italiano.png" alt="italiano"></a>
                     <a href="index_en.html"><img src="img/inglese.png" alt="inglese"></a>
                     <a href="index_de.html"><img src="img/tedesco.png" alt="tedesco"></a>
                 </div>
-            </nav>
-        </header>
-
-        <section class="slider">
-            <div class="img-slider">
-                <div class="slider-container">
-                    <div class="slide">
-                        <img src="img/car1.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="img/car2.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="img/car3.jpg">
-                    </div>
                 </div>
             </div>
-            <div class="cta-mobile">
-                <h1>Pension Roasthof & Pinnisblick</h1>
-            </div>
-            <div class="cta">
-                <h1>REGALATI UNA VACANZA INDIMENTICABILE</h1>
-                <br>
-                <button class="button_bianco">Verifica la disponibilità</button>
-            </div>
-        </section>
-        <section class="cosa_offriamo">
-            <div class="testo_offriamo">
-                <strong>COSA OFFRIAMO</strong>
-                <i>Camere e appartamenti per ogni esigenza</i>
-            </div>
-            <div class="container_gallery">
-                <div class="cardcamera">
-                    <div class="rettangoloblu">CAMERE</div>
-                    <img src="img/camera.jpg" alt="camera">
-                    <br>
-                    <p>Camera singola o doppia *</p>
-                    <br>
-                    <p>Camera doppia o tripla *</p>
-                    <br>
-                    <i>* con cucina in comune</i>
-                </div>
-                <div class="cardcamera">
-                    <div class="rettangoloblu">APPARTAMENTI</div>
-                    <img src="img/appartamento.jpg" alt="appartamento">
-                    <br>
-                    <p>7 appartamenti in totale</p>
-                    <br>
-                    <p>Ospitano da 2 a 6 persone</p>
-                    <br>
-                    <i>Ideale per le famiglie</i>
-                </div>
-            </div>
-            <br>
-            <button class="button_blu">Guarda tutte le foto</button>
-        </section>
-        <div class=" covid rettangolo_covid ">
-            <img src="img/stelline.png" alt="stelline">
-            <p>Tutti i nostri ambienti rispettano le misure di prevenzione anti Covid-19</p>
         </div>
-        <section class="servizi">
-            <div class="testo_offriamo">
-                <strong>SERVIZI</strong>
-                <i>Camere, appartamenti e molto altro</i>
+
+    </header>
+    <section class="cosa_offriamo">
+        <div class="testo_offriamo">
+            <strong>COSA OFFRIAMO</strong>
+            <i>Camere e appartamenti per ogni esigenza</i>
+        </div>
+        <div class="container_gallery">
+            <div class="cardcamera">
+                <div class="rettangoloblu">CAMERE</div>
+                <img src="img/camera.jpg" alt="camera">
+                <br>
+                <p>Camera singola o doppia *</p>
+                <br>
+                <p>Camera doppia o tripla *</p>
+                <br>
+                <i>* con cucina in comune</i>
             </div>
-            <div class="container_servizi">
-                <div>
-                     <img src="img/servizi.jpg" alt="servizi">
-                </div>
-                <div class="box_scritte">
-                    <div>
-                        <p>Offriamo accoglienti appartamenti con una splendida vista sulla valle dello <strong>Stubai</strong>.</p>
-                        <br>
-                        <p>I nostri spazi sono adatti ad ospitare fino a 6 persone e dotati di camera da letto, soggiorno e cucina attrezzata.</p> 
-                        <br>
-                        <p>Inoltre, potrete rilassarvi nella <strong>cabina ad infrarossi</strong> e allenarvi nella <strong>palestra</strong>.</p> 
-                        <br>
-                        <p>La struttura dispone anche di un <strong>giardino</strong> e di una <strong>terrazza</strong>.</p>
-                    </div>
-                    <div class="testo_flex">
-                        <div class="doppio">
-                            <div class="singolo">
-                                <hr>
-                                <strong>Servizio di accoglienza 24/7</strong>
-                            </div>
-                            <div class="singolo">
-                                <hr>
-                                <strong>Adatto ai cani</strong>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="singolo">
-                                <hr>
-                                <strong>Adatto ai bambini</strong>
-                            </div>
-                            <div class="singolo">
-                                <hr>
-                                <strong>Parco giochi privato</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="cardcamera">
+                <div class="rettangoloblu">APPARTAMENTI</div>
+                <img src="img/appartamento.jpg" alt="appartamento">
+                <br>
+                <p>7 appartamenti in totale</p>
+                <br>
+                <p>Ospitano da 2 a 6 persone</p>
+                <br>
+                <i>Ideale per le famiglie</i>
             </div>
-        </section>
+        </div>
         <br>
-        <section class="galleria">
-            <div class="testo_offriamo">
-                <strong>ISPIRAZIONE</strong>
-                <i>Scopri la Valle dello Stubai</i>
-            </div>
-            <div class="grid-gallery">
-                <div class="item1 it">
-                    <div class="bianco">
-                        <h4>IL TERRITORIO</h4>
-                        <br>
-                        <i>Stubai e tradizione</i>
-                    </div>
-                    <img class="box" src="img/1.jpg" alt="img1">
-                </div>
-                <div class="item2 it">
-                    <div class="bianco">
-                        <h4>IL TERRITORIO</h4>
-                        <br>
-                        <i>Baite e rifugi</i>
-                    </div>
-                    <img class="box" src="img/2.jpg" alt="img2">
-                </div>
-                <div class="item3 it">
-                    <div class="bianco">
-                        <h4>VISITA</h4>
-                        <br>
-                        <i>Luoghi affascinanti</i>
-                    </div>
-                    <img class="box" src="img/3.jpg" alt="img3">
-                </div>  
-                <div class="item4 it">
-                    <div>
-                        <div class="item">
-                            <strong>Richiedi informazioni</strong>
-                            <br>
-                            <i>Verrai ricontattato il prima possibile</i>
-                            <br>
-                        </div>
-                        <input type="text" placeholder="esempio@mail.com">
-                        <br>
-                        <br>
-                        <button class="button_blu">Invia</button>
-                    </div>
-                </div>
-                <div class="item5 it">
-                    <div class="bianco">
-                        <h4>VANTAGGI</h4>
-                        <br>
-                        <i>Pensiamo al tuo benessere</i>
-                    </div>
-                    <img class="box" src="img/4.jpg" alt="img4">
-                </div>
-                <div class="item6 it">
-                    <div class="bianco">
-                        <h4>VANTAGGI</h4>
-                        <br>
-                        <i>Concediti del tempo per te</i>
-                    </div>
-                    <img class="box" src="img/5.jpg" alt="img5">
-                </div>
-                <div class="item7 it">
-                    <div class="bianco">
-                        <h4>VANTAGGI</h4>
-                        <br>
-                        <i>Divertimento per i più piccoli</i>
-                    </div>
-                    <img class="box" src="img/6.jpg" alt="img6">
-                </div>
-              </div>
-        </section>
-        <section class="attivita">
-            <div class="testo_offriamo">
-                <strong>ATTIVITA'</strong>
-                <i>Scopri tutte le attività della Valle dello Stubai</i>
-                    <div class="wrapper">
-                        <article>
-                            <div class="rettangolo-esc">
-                                <h4>GHIACCIAIO</h4>
-                            </div>
-                            <div class="pos1">
-                                <img class="esc1 img" src="img/escursione1.JPG" alt="img">
-                                <div class="pos2">
-                                    <div class="arrow"></div>
-                                    <p>Si parte dalla stazione intermedia Fernau a 2,300 metri e si raggiunge la Scharte Niederl.</p>
-                                    <br>
-                                    <p>Entra nella Wilde Grub'n, dove è necessario un passo fermo e assenza di vertigini, e ci si lascia alle spalle la Wilde Grub'n passando a sinistra sul ponte. </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="rettangolo-esc">
-                                <h4>SENTIERO ACQUE SELVAGGE</h4>
-                            </div>
-                            <div class="pos1">
-                                <img class="esc2 img" src="img/escursione2.JPG" alt="img">
-                                <div class="pos2">
-                                    <div class="arrow"></div>
-                                    <br>
-                                    <p>Si attraversa il torrente e si prende il sentiero che conduce alla cascata di Grawa, il cuore pulsante del sentiero delle acque selvagge e la cascata più ampia delle Alpi Orientali. 
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="rettangolo-esc">
-                                <h4>ANELLO DELLO SCHLICK</h4>
-                            </div>
-                            <div class="pos1">
-                                <img class="esc3 img" src="img/escursione3.jpg" alt="img">
-                                <div class="pos2">
-                                    <div class="arrow"></div>
-                                    <br>
-                                    <p>Al termine del percorso si arriva al PanoramaSee, un lago panoramico davvero bello con le montagne che si rispecchiano sulle acque.
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="rettangolo-esc">
-                                <h4>ANELLO DELLO SCHLICK</h4>
-                            </div>
-                            <div class="pos1">
-                                <img class="esc4 img" src="img/escursione4.jpeg" alt="img">
-                                <div class="pos2">
-                                    <div class="arrow"></div>
-                                    <br>
-                                    <p>Si segue il percorso didattico naturalistico che in circa 2 ore di cammino porta alla malga Schlickeralm, nella valle dello Schick. Vicino alla malga è presente un percorso avventura, lungo un chilometro, che permette di provare diverse attività come camminare a piedi nudi.</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="rettangolo-esc">
-                                <h4>SENTIERO PANORAMICO</h4>
-                            </div>
-                            <div class="pos1">
-                                <img class="esc5 img" src="img/escursione5.JPG" alt="img">
-                                <div class="pos2">
-                                    <div class="arrow"></div>
-                                    <br>
-                                    <p>Il punto di partenza è la stazione a monte dell'Elfer, dove potete fare una piccola deviazione di 5 minuti e ammirare il più grande orologio solare calpestabile delle Alpi. </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    
-            </div>
-        </section>
-        <footer>
-            <div class="container_footer">
-                <div class="footer_blu">
-                    <p>HOLZGASSE 10, 6167 NEUSTIFT. | TEL.: ++43 699 10292685 O +43 664 4410071</p>
-                </div>
-                <div class="footer_bianco">
-                    <p>COPYRIGHT @ 2014 PENSION PINNISBLICK & PENSION ROASTHOF</p>
-                </div>
-            </div>
-        </footer>
+        <button class="button_blu">Guarda tutte le foto</button>
+    </section>
+    <div class=" covid rettangolo_covid ">
+        <img src="img/stelline.png" alt="stelline">
+        <p>Tutti i nostri ambienti rispettano le misure di prevenzione anti Covid-19</p>
     </div>
-    
+    <section class="servizi" id="section02">
+        <div class="testo_offriamo">
+            <strong>SERVIZI</strong>
+            <i>Camere, appartamenti e molto altro</i>
+        </div>
+        <div class="container_servizi">
+            <div>
+                 <img src="img/servizi.jpg" alt="servizi">
+            </div>
+            <div class="box_scritte">
+                <div>
+                    <p>Offriamo accoglienti appartamenti con una splendida vista sulla valle dello <strong>Stubai</strong>.</p>
+                    <br>
+                    <p>I nostri spazi sono adatti ad ospitare fino a 6 persone e dotati di camera da letto, soggiorno e cucina attrezzata.</p> 
+                    <br>
+                    <p>Inoltre, potrete rilassarvi nella <strong>cabina ad infrarossi</strong> e allenarvi nella <strong>palestra</strong>.</p> 
+                    <br>
+                    <p>La struttura dispone anche di un <strong>giardino</strong> e di una <strong>terrazza</strong>.</p>
+                </div>
+                <div class="testo_flex">
+                    <div class="doppio">
+                        <div class="singolo">
+                            <hr>
+                            <strong>Servizio di accoglienza 24/7</strong>
+                        </div>
+                        <div class="singolo">
+                            <hr>
+                            <strong>Adatto ai cani</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="singolo">
+                            <hr>
+                            <strong>Adatto ai bambini</strong>
+                        </div>
+                        <div class="singolo">
+                            <hr>
+                            <strong>Parco giochi privato</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="galleria">
+        <div class="testo_offriamo">
+            <strong>ISPIRAZIONE</strong>
+            <i>Scopri la Valle dello Stubai</i>
+        </div>
+        <div class="grid-gallery">
+            <div class="item1 it">
+                <div class="bianco">
+                    <h4>IL TERRITORIO</h4>
+                    <br>
+                    <i>Stubai e tradizione</i>
+                </div>
+                <img class="box" src="img/1.jpg" alt="img1">
+            </div>
+            <div class="item2 it">
+                <div class="bianco">
+                    <h4>IL TERRITORIO</h4>
+                    <br>
+                    <i>Baite e rifugi</i>
+                </div>
+                <img class="box" src="img/2.jpg" alt="img2">
+            </div>
+            <div class="item3 it">
+                <div class="bianco">
+                    <h4>VISITA</h4>
+                    <br>
+                    <i>Luoghi affascinanti</i>
+                </div>
+                <img class="box" src="img/3.jpg" alt="img3">
+            </div>  
+            <div class="item4 it">
+                <div>
+                    <div class="item">
+                        <strong>Richiedi informazioni</strong>
+                        <br>
+                        <i>Verrai ricontattato il prima possibile</i>
+                        <br>
+                    </div>
+                    <input type="text" placeholder="esempio@mail.com">
+                    <br>
+                    <br>
+                    <button class="button_blu">Invia</button>
+                </div>
+            </div>
+            <div class="item5 it">
+                <div class="bianco">
+                    <h4>VANTAGGI</h4>
+                    <br>
+                    <i>Pensiamo al tuo benessere</i>
+                </div>
+                <img class="box" src="img/4.jpg" alt="img4">
+            </div>
+            <div class="item6 it">
+                <div class="bianco">
+                    <h4>VANTAGGI</h4>
+                    <br>
+                    <i>Concediti del tempo per te</i>
+                </div>
+                <img class="box" src="img/5.jpg" alt="img5">
+            </div>
+            <div class="item7 it">
+                <div class="bianco">
+                    <h4>VANTAGGI</h4>
+                    <br>
+                    <i>Divertimento per i più piccoli</i>
+                </div>
+                <img class="box" src="img/6.jpg" alt="img6">
+            </div>
+          </div>
+    </section>
+    <section class="attivita">
+        <div class="testo_offriamo">
+            <strong>ATTIVITA'</strong>
+            <i>Scopri tutte le attività della Valle dello Stubai</i>
+                <div class="wrapper">
+                    <article>
+                        <div class="rettangolo-esc">
+                            <h4>GHIACCIAIO</h4>
+                        </div>
+                        <div class="pos1">
+                            <img class="esc1 img" src="img/escursione1.JPG" alt="img">
+                            <div class="pos2">
+                                <div class="arrow"></div>
+                                <p>Si parte dalla stazione intermedia Fernau a 2,300 metri e si raggiunge la Scharte Niederl.</p>
+                                <br>
+                                <p>Entra nella Wilde Grub'n, dove è necessario un passo fermo e assenza di vertigini, e ci si lascia alle spalle la Wilde Grub'n passando a sinistra sul ponte. </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="rettangolo-esc">
+                            <h4>SENTIERO ACQUE SELVAGGE</h4>
+                        </div>
+                        <div class="pos1">
+                            <img class="esc2 img" src="img/escursione2.JPG" alt="img">
+                            <div class="pos2">
+                                <div class="arrow"></div>
+                                <br>
+                                <p>Si attraversa il torrente e si prende il sentiero che conduce alla cascata di Grawa, il cuore pulsante del sentiero delle acque selvagge e la cascata più ampia delle Alpi Orientali. 
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="rettangolo-esc">
+                            <h4>ANELLO DELLO SCHLICK</h4>
+                        </div>
+                        <div class="pos1">
+                            <img class="esc3 img" src="img/escursione3.jpg" alt="img">
+                            <div class="pos2">
+                                <div class="arrow"></div>
+                                <br>
+                                <p>Al termine del percorso si arriva al PanoramaSee, un lago panoramico davvero bello con le montagne che si rispecchiano sulle acque.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="rettangolo-esc">
+                            <h4>ANELLO DELLO SCHLICK</h4>
+                        </div>
+                        <div class="pos1">
+                            <img class="esc4 img" src="img/escursione4.jpeg" alt="img">
+                            <div class="pos2">
+                                <div class="arrow"></div>
+                                <br>
+                                <p>Si segue il percorso didattico naturalistico che in circa 2 ore di cammino porta alla malga Schlickeralm, nella valle dello Schick. Vicino alla malga è presente un percorso avventura, lungo un chilometro, che permette di provare diverse attività come camminare a piedi nudi.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="rettangolo-esc">
+                            <h4>SENTIERO PANORAMICO</h4>
+                        </div>
+                        <div class="pos1">
+                            <img class="esc5 img" src="img/escursione5.JPG" alt="img">
+                            <div class="pos2">
+                                <div class="arrow"></div>
+                                <br>
+                                <p>Il punto di partenza è la stazione a monte dell'Elfer, dove potete fare una piccola deviazione di 5 minuti e ammirare il più grande orologio solare calpestabile delle Alpi. </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+        </div>
+    </section>
+    <footer>
+        <div class="container_footer">
+            <div class="footer_blu">
+                <p>HOLZGASSE 10, 6167 NEUSTIFT. | TEL.: ++43 699 10292685 O +43 664 4410071</p>
+            </div>
+            <div class="footer_bianco">
+                <p>COPYRIGHT @ 2014 PENSION PINNISBLICK & PENSION ROASTHOF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function() {
+            $('a[href*=#]').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
+        });
+    </script>
 </body>
 </html>
