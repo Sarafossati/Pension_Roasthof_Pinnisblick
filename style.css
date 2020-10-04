@@ -1,4 +1,4 @@
-html, body, div, h1, h4, p, ul, li,footer, header, menu, nav {
+html, body, div, h1, h4, p, footer, header, menu, nav {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -323,10 +323,9 @@ ul li:hover{
 
 #menu-toggle:checked + #trigger + #burger + #menu {
     animation: checked-anim 1s ease both;
-    color: #fff;
 }
+
 #menu-toggle:checked + #trigger ~ #menu > li, a {
-    display: block;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -999,13 +998,17 @@ input{
     }
 }
 
+
   
 @media (max-width: 500px) {
+
+
     .container-grid {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+    
 
     .slider{
         height: 600px;
@@ -1013,21 +1016,23 @@ input{
 
     .slider-container{
         display: none;
-    }
+    } 
+
 
     .img-slider{
         background-image: url(img/mobile.jpg);
         width: 100%;
         height: 600px;
-    }
-
+    } 
+    
+    
     .grid-gallery{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } 
 
     .bg_menu{
         display: block;
