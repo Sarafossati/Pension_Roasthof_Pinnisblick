@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension Roasthof - Pinnisblick</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="15x15" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- BANNER -->
+        <div class="nav-pagine">
+            <a href="index.html"><img class="logo-pagine" src="img/Logo_1.png"></a>
+        </div>
+        
+        <!-- MENU  -->
+        <div class="outer-menu">
+            <input class="checkbox-toggle" type="checkbox" />
+            <div class="hamburger">
+            <div></div>
+            </div>
+            <div class="nomepagina-pinnisblick">
+            <p class="verticale">DISPONIBILITA'</p>
+            </div>
+            <div class="menu">
+            <div>
+                <div class="container-flex-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="roasthof.html">ROASTHOF</a></li>
+                    <li><a href="pinnisblick.html">PINNISBLICK</a></li>
+                    <li><a href="galleria.html">GALLERIA</a></li>
+                    <li><a href="tempolibero.html">TEMPO LIBERO</a></li>
+                    <li><a href="contatti.html">CONTATTI</a></li>
+                    <li><a href="info.html">RICHIEDI INFO</a></li>
+                </ul>
+                <br>
+                <button class="button_azzurro"><a href="verifica-disponibilita.html">Verifica la disponibilità</a></button>
+                <BR></BR>
+                <div class="scelta_lingua">
+                    <a href="index.html"><img src="img/italiano.png" alt="italiano"></a>
+                    <a href="index_en.html"><img src="img/inglese.png" alt="inglese"></a>
+                    <a href="index_de.html"><img src="img/tedesco.png" alt="tedesco"></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cta-verifica">
+        <h3>CONTATTACI PER LA PRENOTAZIONE</h3>
+        <i>* I campi contrassegnati sono obbligatori</i> 
+    </div>
+
+    <main>
+
+        <div class="container-flex-verifica">
+
+            <form class="form-prenotazione">
+
+                <div class="flex-row">
+                    <!-- COGNOME -->
+                    <input type="text" id="cognome" placeholder="Cognome *" required></input>
+
+                    <!-- NOME -->
+                    <input type="text" id="nome" placeholder="Nome *" required></input>
+                </div>
+
+                <!-- SESSO -->
+                <div class="flex-rowmf">
+                    <div>
+                        <input type="radio" name="sesso" id="sesso_m" value="M">
+                        <label for="sesso_m">Maschio</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sesso" id="sesso_f" value="F">
+                        <label for="sesso_f">Femmina</label>
+                    </div>
+                </div>
+
+                <!-- DATA DI NASCITA -->
+                <label>Data di nascita
+                    <input type="date" name="mydatetime">
+                </label>
+
+                <div class="flex-row">
+                    <!-- E-MAIL -->
+                    <input type="email" id="mail" placeholder="E-mail *" required></input>
+
+                    <!-- NUMERO DI TELEFONO -->
+                    <label>
+                        <input type="tel" placeholder="Numero di telefono" name="myTelephone">
+                    </label>
+                </div>
+
+                <div class="flex-row">
+                    <!-- NUMERO ADULTI, BAMBINI E ANIMALI  -->
+                    <input id=demoInput placeholder="Adulti" type=number min=1 max=6>
+                    <input id=demoInput placeholder="Bambini (minori di 6 anni)" type=number min=1 max=6>
+                </div>
+                <input id=demoInput placeholder="Animali" type=number min=1 max=6>
+
+
+                <!-- SELEZIONE CAMERA O APPARTAMENTO -->
+                <label for="camere">Seleziona la camera / appartamento</label>
+                <select name="cars" id="cars">
+                    <option value="camera1">...</option>
+                    <option value="camera2">Appartamento Lavendel</option>
+                    <option value="camera3">Appartamento Silberdistel</option>
+                    <option value="camera4">Appartamento Brunelle</option>
+                    <option value="camera5">Appartamento Serles</option>
+                    <option value="camera6">Appartamento Kreuzjoch</option>
+                    <option value="camera7">Appartamento Burgstall</option>
+                    <option value="camera8">Appartamento Habicht</option>
+                    <option value="camera9">Camera doppia o tripla</option>
+                    <option value="camera10">Camera doppia o singola</option>
+                    <option value="camera11">E' indifferente</option>
+                </select>
+
+                    <!-- DATA DI ARRIVO -->
+                    <label>Data e ora di arrivo
+                        <input type="datetime-local" name="mydatetime">
+                    </label>
+
+                    <!-- DATA DI PARTENZA -->
+                    <label>Data e ora di partenza
+                        <input type="datetime-local" name="mydatetime">
+                    </label>
+
+                    <p>Ti verrà inviata via e-mail la conferma della prenotazione e il prezzo totale. <br> Il tutto sarà da pagare in loco.</p>
+                
+                <br>
+                    
+                <!-- BOTTONE PRENOTA -->
+                <button type="submit" [disabled] class="button_blu">Prenota</button>
+            </form>
+            <br>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.1197333415107!2d11.328122515514725!3d47.11632492970996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d46ae456c3d77%3A0xfddf6f624db92b32!2sPension%20Roasthof%20-%20Appartementhaus%20Pinnisblick!5e0!3m2!1sit!2sit!4v1602328252542!5m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Holzgasse 8 und 10 A-6167 Neustift im Stubaital</p>
+        </div>
+    
+
+    </main>
+
+    
+    <footer>
+        <div class="container_footer">
+            <div class="footer_blu">
+                <p>HOLZGASSE 10, 6167 NEUSTIFT. | TEL.: ++43 699 10292685 O +43 664 4410071</p>
+            </div>
+            <div class="footer_bianco">
+                <p>COPYRIGHT @ 2014 PENSION PINNISBLICK & PENSION ROASTHOF</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

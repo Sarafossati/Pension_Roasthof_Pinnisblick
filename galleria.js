@@ -1,6 +1,3 @@
-
-
-
 // PAGINA GALLERIA
 
 const $ = (selettore) => document.querySelector(selettore);
@@ -41,6 +38,8 @@ $('#filtro3 button').addEventListener ('click', () => {
         style.display = 'block';
     } 
 });
+
+
 
 
 

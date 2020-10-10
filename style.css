@@ -12,6 +12,10 @@ body{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 .button_blu a{
     color: #fff;
 }
@@ -209,7 +213,7 @@ a, a:visited, a:hover, a:active {
 .outer-menu {
     position: fixed;
     top: 15px;
-    right: 60px;
+    right: 70px;
     z-index: 999;
 }
 
@@ -220,15 +224,20 @@ a, a:visited, a:hover, a:active {
     align-items: center;
 }
 
+.container-flex-menu ul li a:visited{
+    color: #0000ee;
+}
+
 .outer-menu .checkbox-toggle {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     opacity: 0;
+    border-radius: 20px;
 }
 
 .outer-menu .checkbox-toggle:checked + .hamburger > div {
@@ -272,11 +281,12 @@ a, a:visited, a:hover, a:active {
     top: 0;
     left: 0;
     z-index: 1;
-    width: 40px;
+    width: 30px;
     height: 40px;
-    background: #000000;
-    padding:10px 20px; 
-    border-radius:5px 0 0 5px;
+    background: #f1efef;
+    padding: 15px; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     cursor: pointer;
     transition: box-shadow .4s ease;
     backface-visibility: hidden;
@@ -291,9 +301,9 @@ a, a:visited, a:hover, a:active {
     left: 0;
     z-index: 1;
     width: 60px;
-    height: 200px;
-    background: #000000;
-    border-radius:5px 0 0 5px;
+    height: 180px;
+    background: #f1efef;
+    border-radius: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -306,9 +316,24 @@ a, a:visited, a:hover, a:active {
     left: 0;
     z-index: 1;
     width: 60px;
+    height: 250px;
+    background: #f1efef;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomepagina-pinnisblick{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    width: 60px;
     height: 300px;
-    background: #000000;
-    border-radius:5px 0 0 5px;
+    background: #f1efef;
+    border-radius: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -316,13 +341,12 @@ a, a:visited, a:hover, a:active {
 }
 
 .verticale{
-    color: #ffffff;
+    color: #000;
     display: block;
-    width: 1.1em;
-    margin: 0 10px;
+    margin: 0 auto;
     font-size: 26px;
-    letter-spacing: 1.1em;
-    word-break: break-all;
+    letter-spacing: 0.2em;
+    transform: rotateZ(270deg);
 }
 
 .outer-menu .hamburger > div {
@@ -330,7 +354,7 @@ a, a:visited, a:hover, a:active {
     flex: none;
     width: 100%;
     height: 2px;
-    background: #ffffff;
+    background: #000;
     transition: all .4s ease;
     display: flex;
     align-items: center;
@@ -373,7 +397,7 @@ a, a:visited, a:hover, a:active {
     width: 200vw;
     height: 200vw;
     color: #ffffff;
-    background: rgba(225,225,225,0.97);
+    background: #fff;
     border-radius: 50%;
     transition: all .4s ease;
     flex: none;
@@ -792,9 +816,10 @@ input{
 .footer_blu{
     background-color: #02336E;
     color: #fff;
-    height: 40px;
+    height: 30px;
     text-align: center;
     width: 100%;
+
 }
 
 .footer_bianco{
@@ -805,6 +830,8 @@ input{
     text-align: center;
     padding-top: 1em;
 }
+
+
 
 /* MEDIA QUERY MOBILE - MAX 500PX */
 
@@ -916,6 +943,15 @@ input{
     .testo_flex strong {
         margin: 0;
     }   
+
+    iframe{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
 } 
 
 /* MEDIA QUERY TABLET */
@@ -1047,11 +1083,22 @@ input{
 
 
 
-
-
-
-
 /* PAGINA GALLERIA */
+
+.nav-pagine{
+    width: 100%;
+    height: 150px;
+    background-color: #02336e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-pagine{
+    width: 120px;
+    height: 100px;
+}
 
 .hide {
     opacity: 0;
@@ -1063,3 +1110,410 @@ input{
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+/* PAGINA ROASTHOF */
+
+/* GRID */
+
+header{
+    grid-area: header;
+}
+
+.container-camere{
+    grid-area: camere;
+}
+
+.covid {
+    grid-area: covid;
+}
+
+.container-servizi-roasthof{
+    grid-area: servizi-roasthof;
+}
+
+.container-prezzi{
+    grid-area: prezzi;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.grid-roasthof {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "camere"
+    "covid"
+    "servizi-roasthof"
+    "prezzi"
+    "footer";
+}
+
+.container-servizi-roastof{
+    margin-top: 4em;
+}
+
+.container-camere{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-camere img{
+    width: 100%;
+    height: auto;
+}
+
+.container-camere button{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.servizi-icone img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+}
+
+.servizi-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.single{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.testo-servizi h3{
+    font-size: 24px;
+}
+
+.testo-servizi p{
+    line-height: 40px;
+}
+
+table {
+    border-collapse:collapse;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+    
+td, th {
+    border:1px solid #ddd;
+    padding: 1em;
+}
+
+td:hover{
+    background-color: #c4c4c4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sfondo-tabella{
+    background-color: #02336e;
+    color: #fff;
+}
+
+/* IMG MODALI  */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#myImg:hover {opacity: 0.7; cursor: pointer;}
+#myImg2:hover {opacity: 0.7; cursor: pointer;}
+#myImg3:hover {opacity: 0.7; cursor: pointer;}
+#myImg4:hover {opacity: 0.7; cursor: pointer;}
+#myImg5:hover {opacity: 0.7; cursor: pointer;}
+#myImg6:hover {opacity: 0.7; cursor: pointer;}
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+/* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+
+
+
+
+/* PAGINA VERIFICA LA DISPONIBILTA' */
+
+.cta-verifica{
+    grid-area: testo;
+}
+
+.container-flex-verifica{
+    grid-area: form;
+}
+
+iframe{
+    grid-area: mappa;
+}
+
+.grid-verifica {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "testo"
+    "form"
+    "mappa"
+    "footer";
+}
+
+.button_azzurro a:visited{
+    color: #fff;
+}
+
+.form-prenotazione{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.flex-rowmf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.flex-rowmf input{
+    margin: 0;
+    padding: 0;
+    width: 3em;
+    height: auto;
+}
+
+
+.div-verifica{
+    width: 100%;
+    left: 0px;
+    position: relative;
+} 
+
+.cta-verifica{
+    color: #02336e;
+    padding: 1em;
+}
+
+.cta-verifica h3{
+    font-size: 30px;
+}
+
+.container-flex-verifica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+input{
+    padding: 1em;
+    margin: 1em;
+    border: solid 1px #02336e;
+}
+
+label{
+    margin: 5px;
+}
+
+
+
+
+
+/* PAGINA RICHIEDI INFORMAZIONI */
+
+.richiedi{
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.richiesta{
+    margin-bottom: 3em;
+}
+
+textarea{
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.info i{
+    margin-bottom: 2em;
+}
+
+.faq{margin-top: 0px;}
+
+.faq-element {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-element::after{
+    /*content: "\25BE";*/
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+    color: var(--primary-color);
+}
+
+.faq-element.active::after{
+    /*content: "\2212";*/
+    transform: rotate(45deg);
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.accordion-item{
+    background-color: var(--secondary-color);
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
+
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid #C4C4C4; 
+    text-align: left;
+}
+
+
+
+
