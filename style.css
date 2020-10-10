@@ -1519,5 +1519,44 @@ textarea{
 }
 
 
+/* PAGINA CONTATTI */
+
+.single a{
+    text-decoration: underline;
+    color: #000;
+}
+
+.come-raggiungerci h3{
+    font-size: 26px;
+}
+
+.come-raggiungerci h5{
+    font-size: 18px;
+    float: left;
+    margin-left: 3em;
+}
+
+.come-raggiungerci p{
+    text-align: center;
+    width: 60%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.container-mezzi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 
