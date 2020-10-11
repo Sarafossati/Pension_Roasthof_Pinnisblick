@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <header>
         <!-- BANNER -->
         <div class="nav-pagine">
@@ -23,16 +23,16 @@
             <div class="hamburger">
             <div></div>
             </div>
-            <div class="nomepagina-pinnisblick">
-            <p class="verticale">PINNISBLICK</p>
+            <div class="nomepagina-galleria">
+            <p class="verticale">DOPPIA</p>
             </div>
             <div class="menu">
             <div>
                 <div class="container-flex-menu">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="roasthof.html">ROASTHOF</a></li>
-                    <li><a class="active" href="pinnisblick.html">PINNISBLICK</a></li>
+                    <li><a class="active" href="roasthof.html">ROASTHOF</a></li>
+                    <li><a href="pinnisblick.html">PINNISBLICK</a></li>
                     <li><a href="galleria.html">GALLERIA</a></li>
                     <li><a href="tempolibero.html">TEMPO LIBERO</a></li>
                     <li><a href="contatti.html">CONTATTI</a></li>
@@ -50,87 +50,84 @@
             </div>
         </div>
     </header>
-    <main class="container-camere">
 
-        <!-- PRIMA -->
-        <div class="camera1">
-            <img id="myImg" alt="Appartamento Lavendel" src="img/lavendel.jpg" alt="">
-            <div class="testo-camera">
-                <h3>APPARTAMENTO LAVENDEL</h3>
-                <i>Per 2 - 4 persone</i>
-                <button class="button_blu"><a href="lavendel.html">Dettagli</a></button>
+    <main>
+        <div class="card-single">
+            <div class="single-testo">
+                <h3>CAMERA DOPPIA O TRIPLA</h3>
+                <br>
+                <p>La nostra camera doppia o tripla appena rinnovata è composta da letto matrimoniale, divano letto e bagno con doccia e wc.<br>Durante il Vostro soggiorno potrete utilizzare la cucina completamente attrezzata al piano inferiore.</p>
+                <br>
+                <button class="button_blu"><a href="verifica-disponibilita.html">Verifica la disponibilità</a></button>
             </div>
+            <img src="img/einzelzimmer.jpg" alt="">
         </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption" class="caption"></div>
-        </div>
-
-
-        <!-- SECONDA -->
-        <div class="camera1">
-            <img id="myImg2" alt="Appartamento Silberdistel"src="img/silberdistel.jpg">
-            <div class="testo-camera">
-                <h3>APPARTAMENTO SILBERDISTEL</h3>
-                <i>Per 4 - 6 persone</i>
-                <button class="button_blu"><a href="silberdistel.html">Dettagli</a></button>
+        <div class="container-overview">
+            <div class="overview">
+                <h3>1</h3>
+                <p>Camera da letto</p>
             </div>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal2" class="modal">
-            <span class="close close2">&times;</span>
-            <img class="modal-content" id="img02">
-            <div id="caption2" class="caption"></div>
-        </div>
-
-
-        <!-- TERZA -->
-        <div class="camera1">
-            <img id="myImg3" alt="Appartamento Brunelle"src="img/brunelle.jpg">
-            <div class="testo-camera">
-                <h3>APPARTAMENTO BRUNELLE</h3>
-                <i>Per 4 - 6 persone</i>
-                <button class="button_blu"><a href="brunelle.html">Dettagli</a></button>
+            <div class="overview">
+                <h3>1</h3>
+                <p>Balcone</p>
             </div>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal3" class="modal">
-            <span class="close close3">&times;</span>
-            <img class="modal-content" id="img03">
-            <div id="caption3" class="caption"></div>
+            <div class="overview">
+                <h3>1</h3>
+                <p>Bagno</p>
+            </div>
+            <div class="overview">
+                <h3>2 - 3</h3>
+                <p>Persone</p>
+            </div>
         </div>
 
     </main>
-    <div class=" covid rettangolo_covid ">
-        <img src="img/stelline.png" alt="stelline">
-        <p>Tutti i nostri ambienti rispettano le misure di prevenzione anti Covid-19</p>
-    </div>
-    <div class="container-servizi-roastof">
-        <div class="testo-servizi">
-            <h3>SERVIZI</h3>
-                <i>I nostri servizi più richiesti::</i>
+
+    <section>
+        <div class="card-single">
+            <img class="img-cardsingle" src="img/doppia1.jpg" alt="">
+            <div>
+                <div class="servizi-icone">
+                    <div class="single">
+                        <img src="img/tv.svg" alt="">
+                        <p>Televisione</p>
+                    </div>
+                    <div class="single">
+                        <img src="img/parking.svg" alt="">
+                        <p>Parcheggio privato</p>
+                    </div>
+                    <div class="single">
+                        <img src="img/wifi.svg" alt="">
+                        <p>Wi-fi gratuito</p>
+                    </div>
+                    <div class="single">
+                        <img src="img/lucchetto.svg" alt="">
+                        <p>Cassaforte</p>
+                    </div>
+                    <div class="single">
+                        <img src="img/doccia.svg" alt="">
+                        <p>Bagno con doccia/vasca</p>
+                    </div>
+                    <div class="single">
+                        <img src="img/caffe.svg" alt="">
+                        <p>Macchina del caffè</p>
+                    </div>
+                    <div class="single">
+                        <img src="img/dvd.svg" alt="">
+                        <p>Lettore DVD</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="servizi-icone">
-            <div class="single">
-                <img src="img/tv.svg" alt="">
-                <p>Televisione</p>
-            </div>
-            <div class="single">
-                <img src="img/parking.svg" alt="">
-                <p>Parcheggio privato</p>
-            </div>
-            <div class="single">
-                <img src="img/wifi.svg" alt="">
-                <p>Wi-fi gratuito</p>
-            </div>
-            <div class="single">
-                <img src="img/lucchetto.svg" alt="">
-                <p>Cassaforte</p>
-            </div>
-        </div>
-    </div>
+    </section>
+    <h3>Guarda altre foto</h3>
+    <section class="altrefoto">
+     
+        <img src="img/doppia2.jpg" alt="">
+        <img src="img/doppia3.jpg" alt="">
+        <img src="img/doppia4.jpg" alt="">
+            
+    </section>
     <div class="testo-servizi">
         <h3>PREZZI</h3>
         <p>I prezzi delle camere si intendono <strong>per persona al giorno</strong>. <br> I prezzi degli appartamenti si intendo <strong>per appartamento al giorno</strong>.<br> Saremo felici di inviarvi un’offerta personalizzata.<br> Supplemento camera singola € 5,- al giorno.<br>Per maggiori informazioni contattaci.</p>
@@ -143,8 +140,10 @@
             <tr><td>Inverno alta stagione</td><td>Da 23,00€</td><td>Da 46,00€</td></tr>
             <tr><td>Inverno bassa stagione</td><td>Da 20,00€</td><td>Da 40,00€</td></tr>
         </table>
-        <button class="button_blu"><a href="info.html">Richiedi informazioni</a></button>
+        <button class="button_blu"><a href="verifica-disponibilita.html">Verifica la disponibilità</a></button>
     </div>
+
+
     <footer>
         <div class="container_footer">
             <div class="footer_blu">
@@ -155,6 +154,8 @@
             </div>
         </div>
     </footer>
-    <script src="pinnisblick.js"></script>
+
+    
+
 </body>
 </html>
