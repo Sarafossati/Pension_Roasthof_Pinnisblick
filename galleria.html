@@ -52,30 +52,141 @@
         </div>
     </header>
 
-    <main class="galleria-main">
-        <div id="filtro1">
-            <button type="button">Roasthof</button>
-            <div class="div-filtro1">
-                <img src="img/escursione1.JPG" alt="">
+    <main>
+      
+        <div class="main">
+
+
+        <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('roasthof')"> Roasthof</button>
+        <button class="btn" onclick="filterSelection('pinnisblick')"> Pinnisblick</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column pinnisblick">
+                    <div class="content">
+                    <img src="img/lavendel.jpg" alt="pinnisblick" style="width:100%">
+                    <h4>APPARTAMENTO LAVENDEL</h4>
+                    </div>
+            </div>
+            <div class="column pinnisblick">
+                    <div class="content">
+                    <img src="img/silberdistel.jpg" alt="pinnisblick" style="width:100%">
+                    <h4>APPARTAMENTO SILBERDISTEL</h4>
+                    </div>
+            </div>
+            <div class="column pinnisblick">
+                    <div class="content">
+                    <img src="img/brunelle.jpg" alt="pinnisblick" style="width:100%">
+                    <h4>APPARTAMENTO BRUNELLE</h4>
+                    </div>
+            </div>
+            <div class="column roasthof">
+                <div class="content">
+                <img src="img/serles.jpg" alt="roasthof" style="width:100%">
+                <h4>APPARTAMENTO SERLES</h4>
+                </div>
+            </div>
+            <div class="column roasthof">
+                <div class="content">
+                <img src="img/kreuzjoch.jpg" alt="roasthof" style="width:100%">
+                <h4>APPARTAMENTO KREUZJOCH</h4>
+                </div>
+            </div>
+            <div class="column roasthof">
+                <div class="content">
+                <img src="img/burgstall.jpg" alt="roasthof" style="width:100%">
+                <h4>APPARTAMENTO BURGSTALL</h4>
+                </div>
+            </div>
+            
+            <div class="column roasthof">
+                <div class="content">
+                <img src="img/habicht.jpg" alt="roasthof" style="width:100%">
+                <h4>APPARTAMENTO HABICHT</h4>
+                </div>
+            </div>
+            <div class="column roasthof">
+                <div class="content">
+                <img src="img/doppelzimmer.jpg" alt="roasthof" style="width:100%">
+                <h4>CAMERA DOPPIA O TRIPLA</h4>
+                </div>
+            </div>
+            <div class="column roasthof">
+                <div class="content">
+                <img src="img/einzelzimmer.jpg" alt="roasthof" style="width:100%">
+                <h4>CAMERA DOPPIA O SINGOLA</h4>
+                </div>
             </div>
         </div>
-        <div id="filtro2">
-            <button type="button">Pinnisblick</button>
-            <div class="div-filtro2">
-                <img src="img/escursione1.JPG" alt="">
-            </div>
-        </div>
-        <div id="filtro3">
-            <button type="button">Tempo libero</button>
-            <div class="div-filtro3">
-                <img src="img/escursione1.JPG" alt="">
-            </div>
-        </div>
+        
+        
+        </div> 
+        
     </main>
         
-        
+      
+    <footer>
+        <div class="container_footer">
+            <div class="footer_blu">
+                <p>HOLZGASSE 10, 6167 NEUSTIFT. | TEL.: ++43 699 10292685 O +43 664 4410071</p>
+            </div>
+            <div class="footer_bianco">
+                <p>COPYRIGHT @ 2014 PENSION PINNISBLICK & PENSION ROASTHOF</p>
+            </div>
+        </div>
+    </footer>
     
-    <script src="app.js"></script>
+    
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+
+        
+        </script>
         
 </body>
 </html>
