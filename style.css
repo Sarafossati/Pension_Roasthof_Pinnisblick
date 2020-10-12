@@ -30,6 +30,10 @@ header {
     grid-area: header;
 }
 
+.struttura{
+    grid-area: struttura;
+}
+
 .cosa_offriamo {
     grid-area: cosa_offriamo;
 }
@@ -40,6 +44,10 @@ header {
 
 .servizi {
     grid-area: servizi;
+}
+
+.struttura2{
+    grid-area: struttura2;
 }
 
 .galleria {
@@ -61,13 +69,19 @@ footer {
     display: grid;
     grid-template-areas: 
     "header"
+    "struttura"
     "cosa_offriamo"
     "covid"
     "servizi"
+    "struttura2"
     "galleria"
     "attivita"
     "footer";
 }
+
+
+
+/* _____________________________________________________________*/
 
 /* ELEMENTI UTILIZZATI PIU' VOLTE */
 
@@ -116,6 +130,10 @@ h2{
     text-align: center;
     padding: 1em;
 }
+
+
+
+/* _____________________________________________________________*/
 
 /* BANNER E CERCHIO  */
 
@@ -476,6 +494,36 @@ a, a:visited, a:hover, a:active {
 /*
 COSA OFFRIAMO
 */
+
+.struttura p{
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+}
+
+.struttura2 p{
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+}
+
+.struttura {
+    margin-top: 5em;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.struttura2 {
+    margin-top: 5em;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 
 .testo_offriamo{
     margin-top: 5em;
@@ -843,6 +891,7 @@ input{
 
 
 
+/* _____________________________________________________________*/
 
 
 /* PAGINA ROASTHOF */
@@ -1061,6 +1110,7 @@ td:hover{
 
 
 
+/* _____________________________________________________________*/
 
 /* PAGINA VERIFICA LA DISPONIBILTA' */
 
@@ -1162,7 +1212,7 @@ label{
 
 
 
-
+/* _____________________________________________________________*/
 
 /* PAGINA RICHIEDI INFORMAZIONI */
 
@@ -1203,7 +1253,6 @@ textarea{
 }
 
 .faq-element::after{
-    /*content: "\25BE";*/
     content: "\002B";
     font-size: 2rem;
     position: absolute;
@@ -1243,6 +1292,8 @@ textarea{
 }
 
 
+/* _____________________________________________________________*/
+
 /* PAGINA CONTATTI */
 
 .single a{
@@ -1281,6 +1332,8 @@ textarea{
 }
 
 
+
+/* _____________________________________________________________*/
 
 /* PAGINA TEMPO LIBERO */
 
@@ -1327,6 +1380,8 @@ textarea{
     border-radius: 5px;
 }
  
+
+/* _____________________________________________________________*/
 
 /* PAGINA SINGOLA */
 
@@ -1398,7 +1453,7 @@ textarea{
     flex-wrap: wrap;
 }
 
-
+/* _____________________________________________________________*/
 
 /* PAGINA GALLERIA */
 
@@ -1428,14 +1483,91 @@ textarea{
     align-items: center;
 }
 
+.galleria hr{
+    width: 100%;
+    color: #c4c4c4;
+    margin-bottom: 2em;
+}
+
+#myBtnContainer{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#myBtnContainer button{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+    margin: 1em;
+}
+
+/* Center website */
+
+.main{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+  
+/* Create three equal columns that floats next to each other */
+.column {
+    display: none; 
+}
+
+.column img{
+    width: 500px;
+    height: auto;
+}
+  
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Content */
+.content {
+    background-color: white;
+    padding: 5px;
+}
+  
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+  
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0 1em;
+    background-color: #12A6E6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #02336E;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 
 
-
-
-
-
+/* _____________________________________________________________*/
 
 /* MEDIA QUERY MOBILE - MAX 500PX */
 
@@ -1588,10 +1720,19 @@ textarea{
         height: auto;
     }
 
+    .column img{
+        width: 100%;
+        height: auto;
+    }
+
+    .struttura2 img{
+        width: 100%;
+    }
+
 
 } 
 
-/* MEDIA QUERY TABLET */
+/* MEDIA QUERY TABLET ( DAI 501px AI 1000px ) */
 
 @media (min-width: 501px) and (max-width: 1000px) {
 
@@ -1649,6 +1790,10 @@ textarea{
     }
 
     .footer_bianco{
+        width: 100%;
+    }
+
+    .struttura2 img{
         width: 100%;
     }
 
@@ -1726,65 +1871,7 @@ textarea{
 
 
 
-/* Center website */
 
-.main{
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-}
- 
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
-  }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
+
 
   
