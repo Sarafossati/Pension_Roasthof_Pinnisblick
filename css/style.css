@@ -1,0 +1,1879 @@
+/* RESET CSS */
+
+html, body, div, h1, h4, p, footer, header, menu, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button_blu a{
+    color: #fff;
+}
+
+.button_azzurro a{
+    color: #fff;
+}
+
+/*  INIZIO GRID  */
+
+header {
+    grid-area: header;
+}
+
+.struttura{
+    grid-area: struttura;
+}
+
+.cosa_offriamo {
+    grid-area: cosa_offriamo;
+}
+
+.covid {
+    grid-area: covid;
+}
+
+.servizi {
+    grid-area: servizi;
+}
+
+.struttura2{
+    grid-area: struttura2;
+}
+
+.galleria {
+    grid-area: galleria;
+}
+
+.attivita {
+    grid-area: attivita;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* DEFAULT GRID */
+
+.container-grid {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "struttura"
+    "cosa_offriamo"
+    "covid"
+    "servizi"
+    "struttura2"
+    "galleria"
+    "attivita"
+    "footer";
+}
+
+
+
+/* _____________________________________________________________*/
+
+/* ELEMENTI UTILIZZATI PIU' VOLTE */
+
+.button_azzurro{
+    background-color: #12A6E6;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.button_bianco{
+    background-color: #fff;
+    color: #02336E;
+    cursor: pointer;
+    padding: 1em;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.button_blu{
+    background-color: #02336E;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+/* _____________________________________________________________*/
+
+/* BANNER E CERCHIO  */
+
+.parallax{
+    width: 100%;
+    background-image: url(img/banner.jpeg);
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta{
+    background-color: rgba(24, 22, 22, 0.5) ;
+    width: 500px;
+    height: auto;
+}
+
+.cerchio img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* LOGO */
+
+.logo{
+    margin-top: 2em;
+    left: 0;
+    width: 200px;
+    height: 160px;
+}
+
+/* SCROLL DOWN BUTTON */
+
+.demo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+.demo::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+}
+
+.demo a {
+    bottom: 20px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    text-align: center;
+}
+  
+.demo a:hover {
+    opacity: .5;
+}
+  
+#section01 a {
+    padding-top: 60px;
+}
+
+#section01 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+  
+
+/* MANU HAMBURGER */
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.outer-menu {
+    position: fixed;
+    top: 15px;
+    right: 70px;
+    z-index: 999;
+}
+
+.container-flex-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-menu ul li a:visited{
+    color: #0000ee;
+}
+
+.outer-menu .checkbox-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.outer-menu .checkbox-toggle:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+.outer-menu .checkbox-toggle:checked + .hamburger > div:before, .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+    opacity: 0;
+}
+
+.outer-menu .checkbox-toggle:checked ~ .menu {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.outer-menu .checkbox-toggle:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: .75s;
+}
+
+.outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity .4s ease .4s;
+}
+
+.outer-menu .checkbox-toggle:hover + .hamburger {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+.outer-menu .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30px;
+    height: 40px;
+    background: #f1efef;
+    padding: 15px; 
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomepagina{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 180px;
+    background: #f1efef;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomepagina-galleria{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 250px;
+    background: #f1efef;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomepagina-pinnisblick{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 300px;
+    background: #f1efef;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verticale{
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    font-size: 26px;
+    letter-spacing: 0.2em;
+    transform: rotateZ(270deg);
+}
+
+.outer-menu .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .hamburger > div:before, .outer-menu .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transition: all .4s ease;
+}
+
+.outer-menu .hamburger > div:after {
+    top: 10px;
+}
+
+.outer-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .menu > div {
+    width: 200vw;
+    height: 200vw;
+    color: #ffffff;
+    background: #fff;
+    border-radius: 50%;
+    transition: all .4s ease;
+    flex: none;
+    transform: scale(0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity .4s ease;
+    overflow-y: auto;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-menu .menu > div > div > ul {
+    list-style: none;
+    padding: 0 1em;
+    margin: 0;
+    display: block;
+    max-height: 100vh;
+}
+.outer-menu .menu > div > div > ul > li {
+    padding: 0;
+    margin: 1em;
+    font-size: 20px;
+    display: block;
+}
+
+.outer-menu .menu > div > div > ul > li > a {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    transition: color .4s ease;
+}
+
+.outer-menu .menu > div > div > ul > li > a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.outer-menu .menu > div > div > ul > li > a:hover:after {
+    width: 100%;
+}
+
+.outer-menu .menu > div > div > ul > li > a:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -0.15em;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #e5e5e5;
+    transition: width .4s ease;
+}
+
+.scelta_lingua img{
+    width: 40px;
+    height: 40px;
+}
+
+/*
+COSA OFFRIAMO
+*/
+
+.struttura p{
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+}
+
+.struttura2 p{
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+}
+
+.struttura {
+    margin-top: 5em;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.struttura2 {
+    margin-top: 5em;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.testo_offriamo{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.testo_offriamo strong{
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.testo_offriamo i{
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.container_gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.cardcamera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.rettangoloblu{
+    background-color: #02336E;
+    color: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 16px;
+    text-align: center;  
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+}
+
+/*
+MISURE PREVENZIONE
+*/
+
+.rettangolo_covid{
+    background-color: #02336E;
+    color: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 14px; 
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.rettangolo_covid img{
+    height: 80px;
+    width: auto;
+    margin-right: 1em;
+}
+
+/*
+SERVIZI
+*/
+
+.grid-gallery{
+    width: 90%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 0px; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item1 { grid-area: 1 / 1 / 3 / 4; }
+.item2 { grid-area: 1 / 4 / 3 / 7; }
+.item3 { grid-area: 3 / 1 / 5 / 3; }
+.item4 { grid-area: 3 / 3 / 5 / 5; }
+.item5 { grid-area: 3 / 5 / 5 / 7; }
+.item6 { grid-area: 5 / 1 / 7 / 4; }
+.item7 { grid-area: 5 / 4 / 7 / 7; }
+
+.testo_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3em;
+}
+
+.box_scritte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4em;
+}
+
+.container_servizi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+
+.testo_flex strong{
+    margin: 1em 3em;
+}
+
+hr{
+    margin-left: 0px;
+    width: 20%;
+}
+
+.container_servizi img{
+    padding: 2em;
+}
+
+.doppio{
+    margin-right: 3em;
+}
+
+.singolo{
+    margin-bottom: 3em;
+}
+
+/* TEMPO LIBERO HOME */
+
+.box{
+    position: relative;
+}
+
+.bianco{
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.it{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.it i{
+    font-size: 14px;
+}
+
+.item4{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px;
+    height: 310px;
+    margin: 0 auto;
+}
+
+.item3 img{
+    width: 420px;
+    height: 320px;
+}
+
+.item5 img{
+    width: 420px;
+    height: 320px;
+}
+
+.item{
+    padding: 2em;
+    margin-bottom: 2em;
+    font-size: 18px;
+}
+
+input{
+    padding: 7px;
+    border-radius: 10px;
+    color: rgb(117, 116, 116);
+    width: 200px;
+}
+
+/* ATTIVITA' */
+
+.rettangoloviaggio{
+    background-color: #737BE1;
+    height: 500px;
+    width: auto;
+    padding:10px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.rettangolo-bianco-viaggio{
+    height: 50px;
+    width: 300px;
+    background-color: #ffffff;
+    border: #515BD4 solid 2px;
+    float: right;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper article{
+    padding: 1em;
+}
+
+.esc1{
+    background-image: url(img/escursione1.JPG) no-repeat center center;
+    height: 100%;
+    width: 100%;
+}
+
+.esc2{
+    background-image: url(img/escursione2.JPG) no-repeat center center;
+    height: 100%;
+    width: 100%;
+}
+
+.esc3{
+    background-image: url(img/escursione3.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+}
+
+.esc4{
+    background-image: url(img/escursione4.jpeg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+}
+
+.esc5{
+    background-image: url(img/escursione5.JPG) no-repeat center center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.esplora{
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.pos1{
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+.pos2{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white; 
+    /* Posizionamento assoluto */
+    bottom: -250px;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+.pos2:hover{
+    color: white;
+    bottom: 5px;
+}
+
+.arrow,
+.arrow:before {
+  display: block;
+  margin-left: 50%;
+}
+
+.arrow {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
+
+.img{
+    height: 300px;
+    width: 250px;
+}
+
+.rettangolo-esc{
+    background-color: #02336E;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.attivita p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pos2 p{
+    padding: 1em;
+}
+
+/* FOOTER */
+
+.container_footer{
+    margin-top: 5em;
+    width: 100%;
+    height: 50px;
+}
+
+.footer_blu{
+    background-color: #02336E;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.footer_bianco{
+    background-color: #fff;
+    color: #02336E;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    padding-top: 1em;
+}
+
+
+
+/* _____________________________________________________________*/
+
+
+/* PAGINA ROASTHOF */
+
+/* GRID */
+
+header{
+    grid-area: header;
+}
+
+.container-camere{
+    grid-area: camere;
+}
+
+.covid {
+    grid-area: covid;
+}
+
+.container-servizi-roasthof{
+    grid-area: servizi-roasthof;
+}
+
+.container-prezzi{
+    grid-area: prezzi;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.grid-roasthof {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "camere"
+    "covid"
+    "servizi-roasthof"
+    "prezzi"
+    "footer";
+}
+
+.container-servizi-roastof{
+    margin-top: 4em;
+}
+
+.container-camere{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-camere img{
+    width: 100%;
+    height: auto;
+}
+
+.container-camere button{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.servizi-icone img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+}
+
+.servizi-icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.single{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.testo-servizi h3{
+    font-size: 24px;
+}
+
+.testo-servizi p{
+    line-height: 40px;
+}
+
+table {
+    border-collapse:collapse;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+    
+td, th {
+    border:1px solid #ddd;
+    padding: 1em;
+}
+
+td:hover{
+    background-color: #c4c4c4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sfondo-tabella{
+    background-color: #02336e;
+    color: #fff;
+}
+
+/* IMG MODALI  */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#myImg:hover {opacity: 0.7; cursor: pointer;}
+#myImg2:hover {opacity: 0.7; cursor: pointer;}
+#myImg3:hover {opacity: 0.7; cursor: pointer;}
+#myImg4:hover {opacity: 0.7; cursor: pointer;}
+#myImg5:hover {opacity: 0.7; cursor: pointer;}
+#myImg6:hover {opacity: 0.7; cursor: pointer;}
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+/* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+
+
+
+/* _____________________________________________________________*/
+
+/* PAGINA VERIFICA LA DISPONIBILTA' */
+
+.cta-verifica{
+    grid-area: testo;
+}
+
+.container-flex-verifica{
+    grid-area: form;
+}
+
+iframe{
+    grid-area: mappa;
+}
+
+.grid-verifica {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "testo"
+    "form"
+    "mappa"
+    "footer";
+}
+
+.button_azzurro a:visited{
+    color: #fff;
+}
+
+.form-prenotazione{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.flex-rowmf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.flex-rowmf input{
+    margin: 0;
+    padding: 0;
+    width: 3em;
+    height: auto;
+}
+
+
+.div-verifica{
+    width: 100%;
+    left: 0px;
+    position: relative;
+} 
+
+.cta-verifica{
+    color: #02336e;
+    padding: 1em;
+}
+
+.cta-verifica h3{
+    font-size: 30px;
+}
+
+.container-flex-verifica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+input{
+    padding: 1em;
+    margin: 1em;
+    border: solid 1px #02336e;
+}
+
+label{
+    margin: 5px;
+}
+
+
+
+/* _____________________________________________________________*/
+
+/* PAGINA RICHIEDI INFORMAZIONI */
+
+.richiedi{
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.richiesta{
+    margin-bottom: 3em;
+}
+
+textarea{
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.info i{
+    margin-bottom: 2em;
+}
+
+.faq{margin-top: 0px;}
+
+.faq-element {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-element::after{
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+    color: var(--primary-color);
+}
+
+.faq-element.active::after{
+    /*content: "\2212";*/
+    transform: rotate(45deg);
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.accordion-item{
+    color: #000;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
+
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid #C4C4C4; 
+    text-align: left;
+}
+
+
+/* _____________________________________________________________*/
+
+/* PAGINA CONTATTI */
+
+.single a{
+    text-decoration: underline;
+    color: #000;
+}
+
+.come-raggiungerci h3{
+    font-size: 26px;
+}
+
+.come-raggiungerci h5{
+    font-size: 18px;
+}
+
+.come-raggiungerci p{
+    text-align: center;
+    width: 60%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.container-mezzi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* _____________________________________________________________*/
+
+/* PAGINA TEMPO LIBERO */
+
+.inizio p{
+    line-height: 2.8;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.inizio h3{
+    font-size: 26px;
+}
+
+
+.container-tempolibero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 400px;
+    height: 300px;
+} 
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.testo-card{
+    width: 500px;
+    height: auto;
+}
+
+.blu{
+    background-color: #02336e;
+    color: #fff;
+    border-radius: 5px;
+}
+ 
+
+/* _____________________________________________________________*/
+
+/* PAGINA SINGOLA */
+
+.img-cardsingle{
+    width: 600px;
+    height: 300px;
+} 
+
+.card-single{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+
+.single-testo{
+    width: 600px;
+    height: auto;
+    padding: 2em;
+}
+
+.single-testo p{
+    line-height: 30px;
+}
+
+.single-testo h3{
+    font-size: 28px;
+}
+
+.container-overview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.overview h3{
+    font-size: 30px;
+}
+
+.pianta{
+    margin-top: 3em;
+    width: 50%;
+}
+
+.altrefoto img{
+    width: auto;
+    height: 200px;
+    margin: 2em;
+    text-align: center;
+}
+
+.altrefoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* _____________________________________________________________*/
+
+/* PAGINA GALLERIA */
+
+.nav-pagine{
+    width: 100%;
+    height: 150px;
+    background-color: #02336e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-pagine{
+    width: 120px;
+    height: 100px;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.galleria-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleria hr{
+    width: 100%;
+    color: #c4c4c4;
+    margin-bottom: 2em;
+}
+
+#myBtnContainer{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#myBtnContainer button{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+    margin: 1em;
+}
+
+/* Center website */
+
+.main{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+  
+/* Create three equal columns that floats next to each other */
+.column {
+    display: none; 
+}
+
+.column img{
+    width: 500px;
+    height: auto;
+}
+  
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Content */
+.content {
+    background-color: white;
+    padding: 5px;
+}
+  
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+  
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0 1em;
+    background-color: #12A6E6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #02336E;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* _____________________________________________________________*/
+
+/* MEDIA QUERY MOBILE - MAX 500PX */
+
+@media (max-width: 500px) {
+
+    .container-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta{
+        background-color: rgba(24, 22, 22, 0.5) ;
+        width: 80%;
+        height: auto;
+    }
+     
+    .grid-gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .item3 img {
+        width: 100%;
+    }
+
+    .item5 img {
+        width: 100%;
+    }
+
+    .item1 { grid-area: 1 / 1 / 2 / 2; }
+    .item2 { grid-area: 1 / 2 / 2 / 3; }
+    .item3 { grid-area: 2 / 1 / 3 / 2; }
+    .item5 { grid-area: 2 / 2 / 3 / 3; }
+    .item6 { grid-area: 3 / 1 / 4 / 2; }
+    .item7 { grid-area: 3 / 2 / 4 / 3; }
+    .item4 { grid-area: 4 / 1 / 5 / 3; }
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper article{
+        padding: 1em;
+    }
+
+    .container_servizi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .box_scritte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .box{
+        margin-top: 1em;
+    }
+    
+    .container_servizi img {
+        padding: 0;
+    }
+
+    div img{
+        width: 100%;
+    }
+
+    .footer_blu {
+        background-color: #02336E;
+        color: #fff;
+        height: 25px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 90%;
+        text-align: center;
+    }
+
+    .testo_flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doppio{
+        margin: 0;
+    }
+
+    .singolo hr{
+        display: none;
+    }
+
+    .testo_flex strong {
+        margin: 0;
+    }   
+
+    iframe{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: auto;
+    } 
+    
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .testo-card{
+        width: 80%;
+        height: auto;
+    }
+
+    .pianta{
+        width: 100%;
+    }
+
+    .img-cardsingle{
+        width: 100%;
+        height: auto;
+    } 
+
+    .altrefoto img{
+        width: 100%;
+        height: auto;
+    }
+
+    .column img{
+        width: 100%;
+        height: auto;
+    }
+
+    .struttura2 img{
+        width: 100%;
+    }
+
+
+} 
+
+/* MEDIA QUERY TABLET ( DAI 501px AI 1000px ) */
+
+@media (min-width: 501px) and (max-width: 1000px) {
+
+    .container-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper article{
+        padding: 1em;
+    }
+
+    .rettangolo_covid{
+        background-color: #02336E;
+        color: #fff;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 14px; 
+        width: 100%;
+        height: 100px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .box{
+        margin-top: 1em;
+    }
+
+    .grid-gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer_blu{
+        background-color: #02336E;
+        color: #fff;
+        width: 100%;
+    }
+
+    .footer_bianco{
+        width: 100%;
+    }
+
+    .struttura2 img{
+        width: 100%;
+    }
+
+}
+
+/* MEDIA QUERY MAX 1400PX */
+
+@media (max-width: 1400px) {
+
+    .container-grid {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .wrapper{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+   }
+
+   .wrapper article{
+       padding: 1em;
+   }
+
+   .rettangolo_covid{
+       background-color: #02336E;
+       color: #fff;
+       padding-top: 1em;
+       padding-bottom: 1em;
+       font-size: 14px; 
+       width: 100%;
+       height: 100px;
+       font-weight: bold;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       margin-top: 70px;
+   }
+
+   .footer_blu{
+       background-color: #02336E;
+       color: #fff;
+       width: 100%;
+   }
+
+   .box{
+       margin-top: 1em;
+
+   }
+
+   .footer_bianco{
+       width: 100%;
+   }
+
+   .grid-gallery{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

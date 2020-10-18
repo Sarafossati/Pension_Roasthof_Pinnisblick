@@ -178,6 +178,9 @@ h2{
     position: relative;
     width: 100%;
     height: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
 }
   
 .demo::after {
@@ -1372,6 +1375,7 @@ textarea{
 .testo-card{
     width: 500px;
     height: auto;
+    padding: 1em;
 }
 
 .blu{
@@ -1563,6 +1567,8 @@ textarea{
     align-items: center;
     flex-wrap: wrap;
 }
+
+
 
 
 

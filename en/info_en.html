@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension Roasthof - Pinnisblick</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" sizes="15x15" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- BANNER -->
+        <div class="nav-pagine">
+            <a href="index_en.html"><img class="logo-pagine" src="img/Logo_1.png"></a>
+        </div>
+        
+        <!-- MENU  -->
+        <div class="outer-menu">
+            <input class="checkbox-toggle" type="checkbox" />
+            <div class="hamburger">
+            <div></div>
+            </div>
+            <div class="nomepagina">
+            <p class="verticale">INFO</p>
+            </div>
+            <div class="menu">
+            <div>
+                <div class="container-flex-menu">
+                    <ul>
+                        <li><a href="index_en.html">HOME</a></li>
+                        <li><a href="roasthof_en.html">ROASTHOF</a></li>
+                        <li><a href="pinnisblick_en.html">PINNISBLICK</a></li>
+                        <li><a href="galleria_en.html">GALLERY</a></li>
+                        <li><a href="tempolibero_en.html">FREE TIME</a></li>
+                        <li><a href="contatti_en.html">CONTACTS</a></li>
+                        <li><a class="active" href="info_en.html">INFORMATIONS</a></li>
+                    </ul>
+                    <br>
+                    <button class="button_azzurro"><a href="verifica-disponibilita_en.html">Check availability</a></button>
+                <BR></BR>
+                <div class="scelta_lingua">
+                    <a href="../index.html"><img src="img/italiano.png" alt="italiano"></a>
+                    <a href="index_en.html"><img src="img/inglese.png" alt="inglese"></a>
+                    <a href="de/index_de.html"><img src="img/tedesco.png" alt="tedesco"></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="richiesta">
+        <h3 class="richiedi">INFORMATIONS</h3>
+        <i>Make use of our booking engine and directly book your holiday with us. Alternatively you can contact us directly via phone or E-mai</i>
+    </main>
+
+    <section>
+
+        <form class="info">
+
+            <div class="flex-row">
+                <!-- COGNOME -->
+                <input type="text" id="cognome" placeholder="Last Name *" required></input>
+
+                <!-- NOME -->
+                <input type="text" id="nome" placeholder="Name *" required></input>
+            </div>
+
+            <div class="flex-row">
+                <!-- E-MAIL -->
+                <input type="email" id="mail" placeholder="E-mail *" required></input>
+
+                <!-- NUMERO DI TELEFONO -->
+                <label>
+                    <input type="tel" placeholder="Telephone number" name="myTelephone">
+                </label>
+            </div>
+
+            <!-- OGGETTO DEL MESSAGGIO -->
+            <label for="camere">Subject</label>
+            <select name="cars" id="cars">
+                <option value="camera1">...</option>
+                <option value="camera2">Costs</option>
+                <option value="camera3">Services</option>
+                <option value="camera4">Availability</option>
+                <option value="camera5">Special proces</option>
+                <option value="camera6">Car sharing</option>
+                <option value="camera7">Equipment sharing</option>
+                <option value="camera8">Informations</option>
+                <option value="camera9">Check-in</option>
+                <option value="camera10">Check-out</option>
+            </select>
+            <br>
+            <textarea name="textarea" id="" cols="30" rows="10">Your messages</textarea>
+            <br>
+            <p>Once the reservation is accepted you will receive an email confirmation.</p>
+            
+            <br>
+                
+            <i>* Marked fields are mandatory fields and have to be filled to assure the handling of your request.</i>
+            <!-- BOTTONE PRENOTA -->
+            <button type="submit" [disabled] class="button_blu">Invia</button>
+        </form>
+
+    </section>
+    <br>
+    <section class="faq">
+        <h3>FAQ</h3>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <div class="faq-element">
+                    <p>How can I terminate my reservation?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>If you can do this with 48 hours notice, there will be no charge.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="faq-element">
+                    <p>Can i edit my reservation?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>If you can do this with 48 hours notice, there will be no charge.<br> Contact us form more info: +43 699 10292685 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="faq-element">
+                    <p>There's free Wi-Fi?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>Free Wi-Fi internet connection is available in the whole farmhouse.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="faq-element">
+                    <p>Is the hotel suitable for disabled people?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>Our establishment is easily accessible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="faq-element">
+                    <p>Is it possible to play in the playground?</p>
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        <p>The playground is available 24/7</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_footer">
+            <div class="footer_blu">
+                <p>HOLZGASSE 10, 6167 NEUSTIFT. | TEL.: ++43 699 10292685 O +43 664 4410071</p>
+            </div>
+            <div class="footer_bianco">
+                <p>COPYRIGHT @ 2014 PENSION PINNISBLICK & PENSION ROASTHOF</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const faq = document.querySelectorAll(".faq-element");
+
+        faq.forEach(faq => {
+        faq.addEventListener("click", event => {
+
+        const currentlyfaq = document.querySelector(".accordion-item-header.active");
+        if(currentlyfaq && currentlyfaq !== faq) {
+            currentlyfaq.classList.toggle("active");
+            currentlyfaq.nextElementSibling.style.maxHeight = 0;
+        }
+
+        faq.classList.toggle("active");
+        const accordionItemBody = faq.nextElementSibling;
+        if(faq.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else{
+            accordionItemBody.style.maxHeight = 0;
+        }
+    });
+});
+
+    </script>
+
+</body>
+</html>
