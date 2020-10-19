@@ -189,7 +189,7 @@ h2{
     height: 80%;
 }
 
-.demo a {
+.demo{
     bottom: 20px;
     z-index: 2;
     display: inline-block;
